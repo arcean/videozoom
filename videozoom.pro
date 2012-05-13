@@ -12,13 +12,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     mainpage.cpp \
-    file.cpp \
     process.cpp
 
 HEADERS  += \
     mainpage.h \
     mainpage.h \
-    file.h \
     process.h
 
 FORMS    +=
