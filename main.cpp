@@ -23,7 +23,7 @@ M_EXPORT int main(int argc, char *argv[]){
 
     page.appear(window);
 
-    window->showFullScreen();
+    window->show();
 
     return application->exec();
  }
