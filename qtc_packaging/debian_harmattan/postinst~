@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#set the permission
+chmod a+x /opt/videozoom/bash/copyFiley
+chmod a+x /opt/videozoom/bash/reboot
+chmod a+x /opt/videozoom/bash/removeFile
+
