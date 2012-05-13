@@ -209,7 +209,12 @@ void MainPage::showAboutDialog()
 {
     MDialog *dialog = new MDialog("", M::CloseButton);
 
-    MLabel *textSystemModal= new MLabel(qtTrId("Video zoom modification for MeeGo 1.2 Harmattan. Created by meegoforum.pl team."));
+    const QChar CopyrightSymbol(0x00a9);
+
+    QString text(qtTrId("Video zoom modification for MeeGo 1.2 Harmattan.\n"));
+    QString copyright_string(QString(CopyrightSymbol) + QString::fromUtf8(" 2012 Tomasz Pieniążek"));
+
+    MLabel *textSystemModal= new MLabel(text + copyright_string);
     textSystemModal->setStyleName("CommonBodyTextInverted");
     textSystemModal->setAlignment(Qt::AlignCenter);
     textSystemModal->setWordWrap(true);
