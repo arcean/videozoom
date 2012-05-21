@@ -74,7 +74,7 @@ void MainPage::createContent()
     viewport->setRange(QRectF(0,0,0,0));
 
     ViewHeader *header = new ViewHeader;
-    header->setTitle("Video zoom");
+    header->setTitle("VideoZoom");
 
     MLinearLayoutPolicy *portraitPolicy = new MLinearLayoutPolicy(layout, Qt::Vertical);
     layout->setPortraitPolicy(portraitPolicy);
@@ -211,7 +211,7 @@ void MainPage::showAboutDialog()
 
     const QChar CopyrightSymbol(0x00a9);
 
-    QString text(qtTrId("Video zoom modification for MeeGo 1.2 Harmattan.\n"));
+    QString text(qtTrId("VideoZoom modification for MeeGo 1.2 Harmattan.\n"));
     QString copyright_string(QString(CopyrightSymbol) + QString::fromUtf8(" 2012 Tomasz Pieniążek"));
 
     MLabel *textSystemModal= new MLabel(text + copyright_string);
@@ -220,7 +220,7 @@ void MainPage::showAboutDialog()
     textSystemModal->setWordWrap(true);
     textSystemModal->setWrapMode(QTextOption::WrapAtWordBoundaryOrAnywhere);
 
-    MLabel *title= new MLabel(qtTrId("Video zoom 1.0"));
+    MLabel *title= new MLabel(qtTrId("VideoZoom 1.0"));
     title->setStyleName("title_label");
     title->setAlignment(Qt::AlignCenter);
     title->setWordWrap(true);
